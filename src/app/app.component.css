@@ -1,0 +1,99 @@
+.container {
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+#todo-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+textarea,
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn-add,
+.btn-update,
+.btn-edit,
+.btn-delete {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-delete{
+  background-color: rgb(238, 63, 60)!important;
+}
+
+.btn-add {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-update {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-edit,
+.btn-delete {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.todo-list-wrapper {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+#todo-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#todo-list th,
+#todo-list td {
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+  word-break: break-all;
+}
+
+#todo-list th {
+  background-color: #f8f9fa;
+  text-align: left;
+}
+
+#todo-list tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.fade-in {
+  animation: fadeIn ease 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
